@@ -1,17 +1,20 @@
 <template>
-    <div></div>
+    <div>
+
+    </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
-    name: 'home'
+    name: 'TopBar'
 })
-export default class Home extends Vue{
+class TopBar extends Vue{
 
 }
 
+export default  TopBar;
 </script>
 
 <style scoped>

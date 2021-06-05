@@ -1,17 +1,20 @@
 <template>
-    <div></div>
+    <component :is="layout">
+        <slot/>
+    </component>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
-    name: 'home'
+    name: 'TheLayout'
 })
-export default class Home extends Vue{
+class TheLayout extends Vue{
 
 }
 
+export default  TheLayout;
 </script>
 
 <style scoped>
